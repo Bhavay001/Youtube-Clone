@@ -5,4 +5,6 @@ class ApiResponse{
         this.message = message
         this.success = statusCode<400   
     }
-}
+}   
+
+// jwt - main is payload where our data goes like id etc

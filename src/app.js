@@ -1,7 +1,6 @@
 import express from "express"
 import cookieParser from "cookie-parser";
 import cors from "cors"
-
 const app = express();
 // middlewares
 app.use(cors({
@@ -22,6 +21,12 @@ app.use(express.urlencoded({
 app.use(express.static("public"))
 
 app.use(cookieParser());
+
+//routes import
+import userRouter from './routes/user.routes.js'
+
+// rotes declaration 
+app.use("/api/v1/users", userRouter)
 
 
 

@@ -1,5 +1,6 @@
 import dotenv from "dotenv"
 import connnectDB from "./db/index.js";
+import { app } from "./app.js";
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 // this is an asysnchronous code so it will return a promise and we can use .then

@@ -12,3 +12,8 @@ const storage = multer.diskStorage({
 export const upload = multer({
     storage, // storage: storage
 })
+
+// headers in http
+// Accept: application/json type of data it will accept 
+// autherization - bearer_
+//

@@ -7,4 +7,5 @@ class ApiResponse{
     }
 }   
 
+export {ApiResponse}
 // jwt - main is payload where our data goes like id etc

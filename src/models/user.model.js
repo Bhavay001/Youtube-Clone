@@ -55,7 +55,7 @@ const userSchema = new Schema(
 // () => we do not write like it as it does not have reference of thisas it will need access of userSchema values
 userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();
-    this.password = bcrypt.hash(this.password,10)
+    this.password = await bcrypt.hash(this.password,10)
     next()
 })
 
